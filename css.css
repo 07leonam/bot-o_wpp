@@ -1,0 +1,39 @@
+#numero-wpp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+#numero-wpp:hover {
+
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+#icon-wpp {
+  max-width: 100%;
+  width: auto;
+  height: 50px !important;
+  border-radius: 50%; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite; 
+}
